@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,900;1,600&display=swap");
+
+:root {
+  --gray-black-card: rgb(26, 26, 26);
+  --white-primary: rgb(235, 235, 235);
+  --white-secundary: rgb(145, 145, 145);
+  --gray-secundary: rgb(75, 75, 75);
+  --green-primary: rgba(2, 19, 19, 0.966);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1528645602411-bbeb0d69a6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjByb2NrfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 85px;
+  color: var(--white-primary);
+  width: 100%;
+  overflow: unset;
+}
+
+.dib {
+  display: inline-block;
+}
+
+header {
+  padding: 1.5rem 0 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav {
+  width: 100%;
+  box-shadow: 0 10px 20px rgb(26, 26, 26);
+  background-color: var(--green-primary);
+  color: #ccc;
+  z-index: 50;
+  position: sticky;
+}
+.nav-logo {
+  width: 10%;
+
+  margin: auto;
+  padding: 1rem;
+}
+
+nav > ul {
+  width: 100%;
+  text-align: right;
+  vertical-align: super;
+}
+li {
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+li:hover {
+  border-bottom: 2px solid darkcyan;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.link {
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.link:hover {
+  border-bottom: 2px solid darkcyan;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.navigator-flex {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  vertical-align: super;
+  z-index: 60;
+}
+li {
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  color: white;
+}
+li:hover {
+  border-bottom: 2px solid darkcyan;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+.btn-repeat {
+  font-size: 28px;
+
+  color: var(--gray-secundary);
+  background-color: rgba(204, 204, 204, 0);
+  border: none;
+  font-weight: bold;
+
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn-next {
+  font-size: 42px;
+  color: var(--white-primary);
+  background-color: rgba(204, 204, 204, 0);
+  border: none;
+
+  vertical-align: middle;
+  cursor: pointer;
+}
+.contenedor-botones-reproductor {
+  padding-right: 5px;
+}
+
+.color-disable {
+  color: var(--gray-secundary);
+}
+.color-enabled {
+  color: var(--white-primary);
+}
+.logo-contacto {
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -50px;
+  margin-left: 150px;
+}
+
+.art-dest-container {
+  background-color: rgb(21, 22, 22);
+  width: 100%;
+}
+
+.enReproduccion {
+}
+
+.container-artista-del-dia {
+  width: 100%;
+  height: 300px;
+
+  margin-top: 15px;
+}
+
+.img {
+  width: 300px;
+  height: 355px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin: 0;
+  border-radius: 15px;
+}
+.texto {
+  width: 40%;
+  height: 100%;
+  vertical-align: top;
+  color: white;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+.texto > h2 {
+  font-size: 30px;
+}
+
+.canciones-destacadas {
+  right: 0;
+  position: inherit;
+  padding: 10px;
+
+  width: 35%;
+  height: 340px;
+
+  overflow-y: auto;
+  z-index: 1;
+
+  margin-top: 20px;
+  vertical-align: top;
+}
+
+.container-artista-del-dia > h2 {
+  color: white;
+}
+.t {
+  color: white;
+}
+.caja {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  width: 18%;
+  height: 130px;
+  background-color: rgb(29, 29, 29);
+  border: 5px solid rgb(44, 44, 44);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+
+  border-radius: 25px 0px 25px 0;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 22px;
+}
+h3 > span {
+  font-size: 30px;
+}
+.canciones--recomendadas-txt {
+  margin: 42px 0px 10px 0px;
+}
+p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  margin-left: 15px;
+  font-weight: bold;
+}
+a:hover {
+  color: white;
+}
+.container {
+  color: white;
+
+  margin: 15px;
+}
+
+main {
+  width: 69%;
+  height: 500px;
+  background-color: rgba(3, 29, 41, 0.932);
+  padding: 20px;
+  overflow-y: scroll;
+  margin-bottom: 160px;
+}
+aside {
+  width: 30%;
+  height: 500px;
+  background-color: rgba(3, 29, 41, 0.932);
+  padding: 15px;
+  position: absolute;
+  margin-left: 5px;
+  margin-bottom: 160px;
+}
+
+li > img {
+  width: 50px;
+  border-radius: 50%;
+}
+li.canciones {
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+li > span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+.card {
+  width: 32%;
+  height: 100px;
+  background-color: rgb(21, 22, 22);
+  border-radius: 10px;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.container-cards {
+  padding: 15px;
+}
+.card:hover {
+  background-color: rgb(30, 30, 31);
+}
+
+.card > img {
+  vertical-align: top;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.text {
+  vertical-align: top;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.reproductor {
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(30, 31, 31);
+  color: white;
+  position: fixed;
+}
+.celdaInfo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.rows {
+  display: grid;
+  grid-template-rows: 95px auto;
+}
+.reproductor > .play {
+  width: 69%;
+  font-size: 60px;
+  height: 80%;
+  color: white;
+}
+.reproductor > .datos {
+  width: 30%;
+  height: 70%;
+  color: white;
+  display: grid;
+}
+.reproductor > .duration {
+  width: 80%;
+  color: white;
+  margin-top: -10px;
+  text-align: right;
+}
+.reproductor > .progress-bar {
+  text-align: center;
+  width: 96%;
+  height: 5px;
+  background-color: rgb(74, 78, 78);
+  top: 0;
+  cursor: pointer;
+}
+.duration > .start {
+  left: 0;
+}
+.duration > .now {
+  text-align: center;
+}
+.duration > .end {
+  text-align: right;
+}
+.navburger {
+  display: none;
+}
+
+.texto > button {
+  color: white;
+  background-color: var(--gray-black-card);
+  cursor: pointer;
+}
+.texto > button:hover {
+  text-decoration: underline;
+}
+
+.btn-reproducir {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.linav {
+  display: flex;
+  height: 160px;
+}
+.player-fix {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  height: 80px;
+  background-color: var(--gray-black-card);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-fix-area {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.player-fix-area:hover {
+  cursor: pointer;
+}
+.player-fix-area-btn {
+  width: 100%;
+  text-align: right;
+}
+.datos-reproduccion {
+  text-align: center;
+  padding-top: 20px;
+}
+.datos-reproduccion > h5 {
+  color: var(--white-secundary);
+}
+.pfai {
+  text-align: left;
+}
+.close-player {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--white-primary);
+  cursor: pointer;
+}
+
+.options-navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  display: none;
+}
+
+.navburger {
+  display: flex;
+
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  font-size: 32px;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.login-base {
+  margin-top: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.login-container {
+  background-color: var(--gray-black-card);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.title-login {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.login {
+  padding: 20px 20px 80px 20px;
+}
+.login-form {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-text {
+  padding: 10px;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: 80%;
+  margin: 0px 0px 25px 0px;
+}
+form {
+  padding-top: 25px;
+}
+.btn {
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+.btn-login {
+  background-color: var(--green-primary);
+  color: var(--white-primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+  border: solid 1px;
+  box-shadow: 0 10px 20px rgb(14, 14, 14);
+}
+
+.btn-login:hover {
+  background-color: var(--white-primary);
+  color: var(--green-primary);
+}
+.player {
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 60px;
+  position: absolute;
+  background-color: var(--gray-black-card);
+}
+.img-area {
+  width: 100%;
+}
+.img-r {
+  width: 50;
+}
+
+@media only screen and (max-width: 1239px) {
+  .canciones-destacadas {
+    vertical-align: 0;
+  }
+}
+
+@media only screen and (max-width: 969px) {
+  body {
+    text-align: center;
+  }
+  nav {
+    text-align: left;
+  }
+
+  .canciones-destacadas {
+    right: 0;
+
+    padding: 10px;
+    margin-top: -4px;
+    width: 100%;
+    height: 315px;
+    background-color: rgb(21, 22, 22);
+    overflow-y: scroll;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .ima {
+    width: 100%;
+  }
+  .container-cards {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .container {
+    margin: 0;
+  }
+  .login-container {
+    flex-direction: column;
+  }
+  .login-base {
+    width: 100%;
+
+    margin-top: 120px;
+  }
+  .login-base {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .texto {
+    width: 100%;
+
+    color: white;
+    margin-top: -5px;
+    background-color: rgb(21, 22, 22);
+    margin-left: 0px;
+  }
+  .img {
+    width: 200px;
+    height: 356px;
+
+    text-align: center;
+  }
+
+  .imgcontainer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .options-navigation {
+    display: none;
+  }
+
+  .options-navigation {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    display: none;
+  }
+
+  .nav-logo {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .ulnav {
+    display: none;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+  }
+  body {
+    margin-top: 55px;
+  }
+  .login-base {
+    margin-top: 80px;
+  }
+}

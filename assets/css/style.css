@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Karla:wght@200;400;800&family=Montserrat:ital,wght@0,100;0,900;1,600&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange-primary: #f1a600;
+  --black-dark: #1f1d2c;
+  --black-semi-dark: #242635;
+  --white-gray: #e5e5e5;
+  --white: #ffffff;
+  --white-transparency: #e5e5e510;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--black-dark);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+nav > ul > li {
+  display: none;
+}
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  color: #e5e5e5;
+  font-size: 22px;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.co-background {
+  width: 60%;
+  height: 30vh;
+  background-color: var(--white-transparency);
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.presentacion {
+  padding: 20px;
+  z-index: 5;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.presentacion > img {
+  width: 110px;
+  position: absolute;
+  right: 20px;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.presentacion > h2 {
+  padding-top: 40px;
+}
+.titulo {
+  font-size: 50px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+.subsection {
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+.subtitulo {
+  font-size: 32px;
+  font-weight: bolder;
+}
+p > span {
+  color: var(--orange-primary);
+}
+.presentacion > p {
+  padding-bottom: 20px;
+}
+.icons {
+  margin-left: 20px;
+}
+.acerca-container {
+  background-color: var(--white-transparency);
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.acerca-container > h2 {
+  text-align: center;
+}
+.acerca-container > p {
+  text-align: center;
+  padding: 20px 10px 30px 10px;
+}
+.empresas-estudio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 20px 10px 20px;
+}
+.bloque-empreestu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.bloque-empreestu > img {
+  width: 70px;
+  margin-bottom: 10px;
+}
