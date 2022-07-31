@@ -114,3 +114,119 @@ p > span {
   width: 70px;
   margin-bottom: 10px;
 }
+.expreiencia-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 20px;
+  padding: 20px;
+}
+.expreiencia-section > h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+.items-experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.item-datos {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 40px;
+}
+.item-exp {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.habilidades::before {
+  content: "";
+  width: 30%;
+  height: 45vh;
+  background-color: var(--white-transparency);
+  position: absolute;
+  z-index: -1;
+}
+.habilidades {
+  display: flex;
+  flex-direction: column;
+}
+.habilidades > h1 {
+  text-align: center;
+  padding: 40px 0px 20px 0px;
+}
+.item-habilidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding: 20px 40px 0px 40px;
+}
+.item-habilidades > h4 {
+  padding-left: 40px;
+}
+.item-habilidades > h2 {
+  color: var(--orange-primary);
+}
+.portafolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+.portafolio-container > h1 {
+  padding-bottom: 20px;
+}
+.proyecto {
+  color: var(--white-gray);
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+.proyecto > img {
+  width: 190px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.proyecto1 {
+  padding-right: 100px;
+}
+.proyecto1::after {
+  content: "";
+  width: 211px;
+  height: 150px;
+  background-color: var(--orange-primary);
+  position: absolute;
+  margin: -190px 0px 0px -10px;
+  z-index: -1;
+}
+.proyecto2 {
+  padding-left: 150px;
+}
+.proyecto3 {
+  padding-right: 100px;
+}
+.proyecto3::after {
+  content: "";
+  width: 211px;
+  height: 150px;
+  background-color: var(--orange-primary);
+  position: absolute;
+  margin: -190px 0px 0px -10px;
+  z-index: -1;
+}
+.contact-container {
+}
+.imgback {
+  position: absolute;
+  z-index: -1;
+}
