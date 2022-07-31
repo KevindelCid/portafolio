@@ -6,17 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body onscroll="displayMenuOff()">
 
         
     <div class="co-background">
         
     </div>
         <nav>
-            <button class="btn-menu" onclick="" type="button">
+            <button id="btnMenu" class="btn-menu" onclick="displayMenu()" type="button">
                 ☰
             </button>
-            <ul>
+            <ul class="menu" id="menu">
                 <li>Home</li>
                 <li>Acerca de mi</li>
                 <li>Experiencia</li>
@@ -56,7 +56,7 @@
             </div>
         </section>
         <section class="expreiencia-section">
-            <h2>Experiencia</h2>
+            <h2 class="subtitulo">Experiencia</h2>
             <div class="items-experiencia">
 
                 <div class="item-datos">
@@ -98,7 +98,7 @@
 
         <section class="habilidades">
             
-            <h1>Mis habilidades</h1>
+            <h2 class="subtitulo">Mis habilidades</h2>
            
             <div class="elementos-habilidades">
 
@@ -130,7 +130,7 @@
 
         <section class="portafolio-container">
             
-            <h1>Mi portafolio</h1>
+            <h2 class="subtitulo">Mi portafolio</h2>
             <a href="https://github.com/KevindelCid/lusyc" target="_blank" class="proyecto1 proyecto">
                 
                 <img src="./assets/images/LUSYC.jpg" width="300" alt="">
@@ -150,14 +150,33 @@
 
         </section>
 
-        <section>
+        <section class="contact-container">
            
-         <img class="imgback" src="./assets/icons/Rectangle 33-1.svg" alt="">
-         <h1>Contacto</h1>
-         <img src="./phone 3.svg" alt="">
+         <h2 class="subtitulo">Contacto</h2>
+         <div class="items-contacto">
+             <div contacto-item1>
+            <img src="./phone 3.svg" width="70" alt="">
+            <h4>Número celular</h4>
+            <small>+50241124830</small>
+         </div>
+         <div class="contacto-item2">
+            <img src="./assets/icons/mail 3.svg" width="70" alt="">
+            <h4>Email</h4>
+            <small>Kevindelcid731@gmail.com</small>
+         </div>
+         </div>
+        
+
+         
 
         </section>
+        <footer>
+            <h4>Hecho con ♥ en Academlo</h4>
+        </footer>
 
+        <script src="./assets/js/app.js">
+            
+        </script>
 
     </body>
 </html>
