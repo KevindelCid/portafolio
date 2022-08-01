@@ -9,7 +9,7 @@ function displayMenu() {
     btnMenu.textContent = "X";
     menuState = true;
   } else {
-    menu.style.left = "-100rem";
+    menu.style.left = "-1000rem";
     menuState = false;
     btnMenu.textContent = "☰";
   }
@@ -17,7 +17,7 @@ function displayMenu() {
 
 function displayMenuOff() {
   if (menuState) {
-    menu.style.left = "-100rem";
+    menu.style.left = "-1000rem";
     menuState = false;
     btnMenu.textContent = "☰";
   }

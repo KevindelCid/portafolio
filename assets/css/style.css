@@ -31,7 +31,7 @@ body {
   padding: 40px;
   text-align: center;
   list-style: none;
-  left: -100rem;
+  left: -1000rem;
   display: flex;
   flex-direction: column;
 
@@ -215,13 +215,21 @@ p > span {
 .proyecto {
   color: var(--white-gray);
   text-decoration: solid;
-  cursor: pointer;
 }
 
+.home-a {
+  color: var(--orange-primary);
+  font-weight: bold;
+}
 .proyecto > img {
   width: 190px;
   height: 150px;
   object-fit: cover;
+  cursor: pointer;
+}
+.proyecto > p {
+  cursor: pointer;
+  width: 200px;
 }
 
 .proyecto1 {
@@ -270,8 +278,7 @@ p > span {
 
   text-align: center;
 }
-.contacto-item1 {
-}
+
 .contacto-item2 {
   padding-top: 40px;
   position: relative;
@@ -281,4 +288,211 @@ footer > h4 {
   font-style: italic;
   text-align: center;
   padding: 25px 0px 25px 0px;
+}
+
+@media only screen and (min-width: 650px) {
+  .presentacion > img {
+    width: 250px;
+    top: 248px;
+    right: 77px;
+  }
+  .titulo {
+    font-size: 90px;
+  }
+  .subsection {
+    font-size: 38px;
+    padding-bottom: 55px;
+  }
+  .presentacion > p {
+    font-size: 22px;
+    padding-bottom: 88px;
+  }
+  .presentacion {
+    padding-bottom: 168px;
+  }
+  .icons {
+    width: 70px;
+  }
+  .subtitulo {
+    font-size: 52px;
+  }
+  .acerca-container > p {
+    font-size: 22px;
+  }
+  .exp-item > h4 {
+    font-size: 20px;
+  }
+  .item-exp > h4 {
+    font-size: 20px;
+  }
+  .item-habilidades > h2 {
+    font-size: 40px;
+  }
+  .habilidades::before {
+    height: 65vh;
+  }
+  .item-habilidades > h4 {
+    padding-left: 91px;
+    padding-top: 20px;
+    font-size: 22px;
+  }
+  .portafolio-container {
+    padding-top: 98px;
+  }
+  .proyecto > img {
+    width: 242px;
+    height: 190px;
+  }
+  .proyecto1 {
+    margin-right: 319px;
+  }
+  .proyecto1::after {
+    width: 261px;
+    height: 183px;
+    margin-top: -251px;
+  }
+  .proyecto2 {
+    margin-right: -204px;
+  }
+  .proyecto3 {
+    margin-right: 319px;
+  }
+  .proyecto3::after {
+    width: 261px;
+    height: 183px;
+    margin-top: -251px;
+  }
+  .icon-contact {
+    width: 120px;
+  }
+  .contacto-item1 {
+    font-size: 22px;
+  }
+  .contacto-item2 {
+    font-size: 22px;
+  }
+  .co-background {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .presentacion > img {
+    width: 350px;
+    top: 298px;
+    right: 250px;
+  }
+  .titulo {
+    margin-left: 100px;
+    font-size: 160px;
+  }
+  .subsection {
+    margin-left: 100px;
+    font-size: 48px;
+    padding-bottom: 110px;
+  }
+  .presentacion > p {
+    font-size: 22px;
+    padding-bottom: 130px;
+  }
+  .presentacion {
+    padding-bottom: 188px;
+  }
+  .bloque-empreestu > img {
+    width: 150px;
+  }
+  .icons {
+    width: 190px;
+  }
+  .subtitulo {
+    font-size: 52px;
+  }
+  .acerca-container > p {
+    font-size: 22px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .acerca-container > h2 {
+    padding-top: 40px;
+  }
+  .empresas-estudio {
+    padding: 40px 20px 40px 20px;
+  }
+  .exp-item > h4 {
+    font-size: 20px;
+  }
+  .item-exp > h4 {
+    font-size: 20px;
+  }
+  .item-habilidades > h2 {
+    font-size: 40px;
+    margin-left: 324px;
+  }
+  .habilidades::before {
+    height: 66vh;
+    width: 30%;
+  }
+  .item-habilidades > h4 {
+    padding-left: 91px;
+    padding-top: 20px;
+    font-size: 22px;
+  }
+  .portafolio-container {
+    padding-top: 98px;
+  }
+  .proyecto > img {
+    width: 382px;
+    height: 333px;
+  }
+  .proyecto > p {
+    width: 400px;
+    text-align: center;
+  }
+  .proyecto1 {
+    margin-right: 719px;
+  }
+  .proyecto1::after {
+    width: 402px;
+
+    height: 306px;
+    margin-top: -400px;
+  }
+
+  .proyecto2 {
+    margin-right: -824px;
+  }
+  .proyecto3 {
+    margin-right: 719px;
+  }
+  .proyecto3::after {
+    width: 402px;
+
+    height: 306px;
+    margin-top: -400px;
+  }
+  .icon-contact {
+    width: 120px;
+  }
+  .contacto-item1 {
+    font-size: 22px;
+  }
+  .contacto-item2 {
+    font-size: 22px;
+  }
+  .co-background {
+    height: 60vh;
+  }
+  .menu {
+    background-color: transparent;
+    margin-top: 0;
+    left: 0;
+    padding: 10px 40px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .btn-menu {
+    display: none;
+  }
 }
