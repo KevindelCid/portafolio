@@ -24,7 +24,6 @@ body {
 }
 
 .menu {
-  display: none;
   position: fixed;
   background-color: var(--black-semi-dark);
   width: 100%;
@@ -32,12 +31,26 @@ body {
   padding: 40px;
   text-align: center;
   list-style: none;
+  left: -100rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
 }
-.menu > li {
-  margin-bottom: 15px;
+
+br {
+  margin-top: 15px;
 }
-.menu > li:hover {
-  border-bottom: solid var(--white) 1px;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu > a:hover {
+  border-bottom: solid var(--orange-primary) 1px;
   cursor: pointer;
 }
 

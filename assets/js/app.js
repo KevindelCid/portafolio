@@ -5,11 +5,11 @@ let scrollMenuState = false;
 const body = document.getElementById("body");
 function displayMenu() {
   if (!menuState) {
-    menu.style.display = "block";
+    menu.style.left = "0px";
     btnMenu.textContent = "X";
     menuState = true;
   } else {
-    menu.style.display = "none";
+    menu.style.left = "-100rem";
     menuState = false;
     btnMenu.textContent = "☰";
   }
@@ -17,7 +17,7 @@ function displayMenu() {
 
 function displayMenuOff() {
   if (menuState) {
-    menu.style.display = "none";
+    menu.style.left = "-100rem";
     menuState = false;
     btnMenu.textContent = "☰";
   }
