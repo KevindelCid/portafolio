@@ -32,12 +32,14 @@ const menuDisplayer = () => {
   }, 250);
 };
 const hiddenMenu = () => {
-  menu.classList.replace("display-menu", "hide-menu");
-  btnMenu.classList.replace("change-burger-x", "change-x-burger");
+  if (screen.width < 900) {
+    menu.classList.replace("display-menu", "hide-menu");
+    btnMenu.classList.replace("change-burger-x", "change-x-burger");
 
-  setTimeout(() => {
-    btnMenu.textContent = "☰";
-  }, 250);
+    setTimeout(() => {
+      btnMenu.textContent = "☰";
+    }, 250);
+  }
 };
 
 window.addEventListener("resize", (e) => {
