@@ -4,7 +4,13 @@ const btnMenu = document.getElementById("btnMenu");
 const anchor = document.getElementsByClassName("anchor-menu");
 
 window.addEventListener("load", (e) => {
-  screen.width > 1149 ? displayMenu() : hiddenMenu();
+  if (screen.width > 900) {
+    menu.classList.add("display-menu");
+    menu.classList.remove("hide-menu");
+  } else {
+    menu.classList.remove("display-menu");
+    menu.classList.add("hide-menu");
+  }
 });
 
 /*
