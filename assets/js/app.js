@@ -1,4 +1,5 @@
 const menu = document.getElementById("menu");
+const menub = document.getElementById("menu-back");
 const btnMenu = document.getElementById("btnMenu");
 const anchor = document.getElementsByClassName("anchor-menu");
 
@@ -42,5 +43,7 @@ window.onscroll = function () {
     window.scrollY > 10
       ? menu.classList.add("background--dinamic")
       : menu.classList.remove("background--dinamic");
+  } else {
+    hiddenMenu();
   }
 };

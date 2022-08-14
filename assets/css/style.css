@@ -227,7 +227,7 @@ p > span {
 }
 .acerca-container > p {
   text-align: center;
-  padding: 20px 10px 30px 10px;
+  padding: 20px 70px 30px 70px;
 }
 .empresas-estudio {
   display: flex;
@@ -256,6 +256,9 @@ p > span {
   text-align: center;
   padding-top: 40px;
 }
+.lateral-bar {
+  justify-self: flex-end;
+}
 .items-experiencia {
   display: flex;
   flex-direction: row;
@@ -272,14 +275,14 @@ p > span {
 .item-exp {
   display: flex;
   flex-direction: row;
-  flex: auto;
+
   align-items: center;
   justify-content: space-around;
 }
 .habilidades::before {
   content: "";
   width: 30%;
-  height: 45vh;
+  height: 50vh;
   background-color: var(--white-transparency);
   position: absolute;
   z-index: -1;
@@ -536,6 +539,7 @@ footer > h4 {
   }
   .subtitulo {
     font-size: 52px;
+    padding-top: 40px;
   }
   .acerca-container > p {
     font-size: 22px;
