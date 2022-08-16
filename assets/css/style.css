@@ -278,6 +278,19 @@ p > span {
 
   align-items: center;
   justify-content: space-around;
+
+}
+.exp-item{
+
+  flex-basis: 100px;
+}
+
+
+.item-exp>img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+ 
 }
 .habilidades::before {
   content: "";
@@ -620,7 +633,7 @@ footer > h4 {
     background-color: transparent;
     margin-top: 0;
 
-    padding: 10px 40px 10px 0px;
+    padding: 30px 40px 10px 0px;
     display: flex;
     flex-direction: row;
     justify-content: end;
